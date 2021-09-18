@@ -21,7 +21,7 @@ function App() {
         <Container maxWidth="sm">
             <header>
                 <Typography variant="h2">
-                    Online courses for the API enthusiast
+                    Wordpress interacing with the API and React
                 </Typography>
                 {isSignedIn ? (
                     <p>
@@ -30,17 +30,19 @@ function App() {
                 ) : (
                     <p>
                         <button className="snipcart-customer-signin">
-                            Sign in to purchase our courses
+                            Log in to see the price of a custom-post
                         </button>
                     </p>
                 )}
             </header>
             <section>
-                <Typography variant="h4">Courses from top teachers</Typography>
+                <Typography variant="h4">
+                    Here you will find custom-posts:
+                </Typography>
                 <CustomPost />
             </section>
             <section>
-                <Typography variant="h4">From our blog</Typography>
+                <Typography variant="h4">From our blog:</Typography>
                 <Posts />
             </section>
             <footer style={{ marginTop: "3em" }}>
